@@ -84,6 +84,13 @@ class Assignment extends React.Component {
               Grade
             </Button>
             <ToastContainer autoClose={1500} /> 
+
+            <Button component={Link} to={{pathname:'/gradebook',   assignment: assignmentSelected }} 
+                    variant="outlined" color="primary" disabled={this.state.assignments.length===0}  style={{margin: 10}}>
+              Add Assignment
+            </Button>
+            <ToastContainer autoClose={1500} />
+
           </div>
       )
   }
